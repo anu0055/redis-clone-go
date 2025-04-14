@@ -1,0 +1,19 @@
+# Binaries
+*.exe
+*.out
+*.o
+*.a
+
+# Build and test
+bin/
+vendor/
+coverage.out
+
+# VSCode
+.vscode/
+
+# OS
+.DS_Store
+
+# Go modules cache
+go.sum

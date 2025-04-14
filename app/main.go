@@ -33,11 +33,20 @@ func main() {
 }
 
 func handleClient(conn net.Conn) {
+	defer conn.Close()
 	buf := make([]byte, 1024)
 
-	_, err := conn.Read(buf)
-	if err != nil {
-		return
+	for {
+		n, err := conn.Read(buf)
+		if err != nil {
+			// Connection closed or error occurred
+			return
+		}
+
+		input := string(buf[:n])
+		fmt.Printf("Received: %s\n", input)
+
+		// For now, respond with hardcoded +PONG
+		conn.Write([]byte("+PONG\r\n"))
 	}
-	conn.Write([]byte("+PONG/r/n"))
 }
