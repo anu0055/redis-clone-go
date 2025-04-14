@@ -1,5 +1,5 @@
 [![progress-banner](https://backend.codecrafters.io/progress/redis/0d91610e-893e-4eca-8959-f7de2dc3ef89)](https://app.codecrafters.io/users/codecrafters-bot?r=2qF)
-
+I have starting with this challenge on 14-04-2025, Hoping to learn a lot and complete it (Goal is to learn how Redis works and to learn Golang)
 This is a starting point for Go solutions to the
 ["Build Your Own Redis" Challenge](https://codecrafters.io/challenges/redis).
 
